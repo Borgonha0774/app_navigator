@@ -2,6 +2,10 @@ import 'package:app_atm/screenMain.dart';
 import 'package:flutter/material.dart';
 
 class ScreenPrimary extends StatefulWidget {
+  /* Passandod aos de uam tela para outra */
+  String? value;
+  ScreenPrimary({this.value});
+
   @override
   State<ScreenPrimary> createState() => _ScreenPrimaryState();
 }
@@ -19,12 +23,12 @@ class _ScreenPrimaryState extends State<ScreenPrimary> {
       body: Container(
           padding: const EdgeInsets.all(32),
           child: Column(
-            children: const <Widget>[
-              Padding(
+            children: <Widget>[
+              const Padding(
                 padding: EdgeInsets.all(15),
               ),
               Text(
-                'Primary Screen!!!',
+                "Primary Screen! Valor recebido da Screen Main: ${widget.value}",
               ),
             ],
           )),

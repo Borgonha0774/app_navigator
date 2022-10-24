@@ -28,7 +28,7 @@ class _ScreemMainState extends State<ScreemMain> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ScreenPrimary(),
+                      builder: (context) => ScreenPrimary(value: 'Borgonha'),
                     ),
                   );
                 },
