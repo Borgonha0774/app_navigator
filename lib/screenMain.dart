@@ -25,12 +25,7 @@ class _ScreemMainState extends State<ScreemMain> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ScreenPrimary(value: 'Borgonha'),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/primary');
                 },
                 child: const Text(
                   'Go Primary Screen',

@@ -27,8 +27,16 @@ class _ScreenPrimaryState extends State<ScreenPrimary> {
               const Padding(
                 padding: EdgeInsets.all(15),
               ),
-              Text(
-                "Primary Screen! Valor recebido da Screen Main: ${widget.value}",
+              const Text(
+                "Primary Screen!",
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/');
+                },
+                child: const Text(
+                  'Go Main Screen',
+                ),
               ),
             ],
           )),
